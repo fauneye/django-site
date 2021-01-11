@@ -9,10 +9,10 @@ class TaskForm(ModelForm):
         widgets = {
             'title':TextInput(attrs={
                 "class": "form-control",
-                'placeholder': 'Введите название'
+                'placeholder': 'Введите название задачи'
             }),
             'task': Textarea(attrs={
                 "class": "form-control",
-                'placeholder': 'Введите описание'
+                'placeholder': 'Введите описание задачи'
             }),
         }
