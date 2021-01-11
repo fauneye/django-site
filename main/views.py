@@ -3,7 +3,7 @@ from .models import Task
 from .forms import TaskForm
 
 def index(request):
-    tasks = Task.objects.order_by('-id')
+    tasks = Task.objects.order_by('-id')[:1]
     return render(request, 'main/index.html', {'title': 'Главная', 'tasks': tasks})
 
 
